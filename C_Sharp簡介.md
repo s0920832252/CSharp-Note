@@ -13,7 +13,7 @@ C# 被設計成為一種「簡單、現代、通用」 , 以及物件導向的�
 
 C# 的 '#' 唸作「sharp」 , 其命名啟發於音樂上的音名「C♯」（C升半音） , 因此 C# 有著 C++ 的進化版的意思. ( C# 原來的名字其實是 COOL , 直到 2000 年 2 月 , COOL才因為版權等問題被更名為 C# )
 
-下圖是 C# 的吉祥物圖樣
+下圖是 C# 的吉祥物圖樣    
 ![](https://i.imgur.com/REBli13.jpg)
 
 
@@ -34,10 +34,10 @@ C# 的 '#' 唸作「sharp」 , 其命名啟發於音樂上的音名「C♯」（
 
 ### 參考
 [C Sharp (programming language)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#History)     
-[熱愛開源的C#之父-安德斯•海爾斯伯格](https://kknews.cc/zh-tw/tech/ljeg6rb.html)
-[说说C#之父——安德斯·海尔斯伯格](https://www.cnblogs.com/weige/p/3310397.html)
-
-
+[熱愛開源的C#之父-安德斯•海爾斯伯格](https://kknews.cc/zh-tw/tech/ljeg6rb.html)    
+[说说C#之父——安德斯·海尔斯伯格](https://www.cnblogs.com/weige/p/3310397.html)    
+[C#之父Anders首来华：从TypeScript看开源](https://tech.huanqiu.com/article/9CaKrnJR0JN)    
+[安德斯·海尔斯伯格](https://baike.baidu.com/item/%E5%AE%89%E5%BE%B7%E6%96%AF%C2%B7%E6%B5%B7%E5%B0%94%E6%96%AF%E4%BC%AF%E6%A0%BC/2152925?fromtitle=Anders%20Hejlsberg&fromid=9081506#2)    
 
 
 
