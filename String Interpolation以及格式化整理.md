@@ -4,11 +4,13 @@ tags: C# , Language
 
 # String Interpolation & 格式化整理
 ## 前言
-- string interpolation 讓字串插入某些「特定字」. 可用來取代 String.Format , string interpolation 比 String.Format 讓我們更容易表示愈顯示的字串格式.
+- String Interpolation 讓字串插入某些「特定字」. 可用來取代 String.Format , String Interpolation 比 String.Format 讓我們更容易表示愈顯示的字串格式.
 - 差異
     - String.Format 的使用是 string.Format("{0} 的年齡是 {1}", name, age)) , 先佔位後 , 再輸入變數.
     - 但 string interpolation 則可以直接將變數放入佔位處 , 像是
         - $"{name} 的年齡是 {age}"
+    - String.Format 變數位置擺的位置比較不直覺 , 所以位置順率可能會擺錯.
+- $ 編譯後與 String.Format 編譯後相等
 - 簡單範例
 ```C#
 string name   = "City";
