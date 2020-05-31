@@ -3,7 +3,7 @@ tags: C# , Language
 ---
 
 # C# 參考資源
-
+[.Net Reference](https://referencesource.microsoft.com/)
 [C# Language Feature Status](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md)     
 [Bill 叔的部落格](https://dotblogs.com.tw/billchung)      
 [Bill 叔的GitHub](https://github.com/billchungiii)    
