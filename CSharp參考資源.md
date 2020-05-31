@@ -8,6 +8,7 @@ tags: C# , Language
 [Bill 叔的部落格](https://dotblogs.com.tw/billchung)      
 [Bill 叔的GitHub](https://github.com/billchungiii)    
 [C# 各版本新增加功能](https://iter01.com/433445.html)    
+[如何：判斷安裝的 .NET Framework 版本](https://docs.microsoft.com/zh-tw/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)    
 [C# 的歷史](https://docs.microsoft.com/zh-tw/dotnet/csharp/whats-new/csharp-version-history#c-version-20)    
 [C# 語言版本控制](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/configure-language-version#configure-multiple-projects)    
 [[.net framework工程師看.net core][01]開篇](https://blog.alantsai.net/posts/2017/10/net-framework-see-new-core01-introduction)     
