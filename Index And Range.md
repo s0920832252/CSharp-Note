@@ -64,8 +64,8 @@ var words = new string[]
     ```    
 - 靜態方法
     ```C#
-    var index1 = Index.FromEnd(3);     // 表第'3'個位置
-    var index2 = Index.FromStart(3);   // 表倒數第三個位置
+    var index1 = Index.FromStart(3);     // 表第'3'個位置
+    var index2 = Index.FromEnd(3);   // 表倒數第三個位置
     ```
 - 靜態屬性    
     ```C#
@@ -153,6 +153,7 @@ public readonly struct Range : IEquatable<Range>
 ```
 - Range 是 readonly struct
 - [ startIndex ... endIndex ]  ,  endIndex 不包含 End Index  (上包 下不包)
+- startIndex 必須小於 endIndex . **目前**尚不支援倒著數
 
 ### 建立方式
 - 建構式
