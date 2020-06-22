@@ -34,7 +34,7 @@ Console.WriteLine(string.Format("|{0,-10}|{1,10}|", "靠左對齊", "靠右對�
 // new 
 Console.WriteLine("\n## 新的寫法");
 Console.WriteLine($"{name} 的體重是 {weight:##.000}");
-Console.WriteLine($"日期時間 {DateTime.Now: yyyy/MM/dd HH:mm:ss}");
+Console.WriteLine($"日期時間 {DateTime.Now:yyyy/MM/dd HH:mm:ss}");
 Console.WriteLine($"{Math.PI,20} - 圓周率");
 Console.WriteLine($"|{"靠左對齊",-10}|{"靠右對齊",10}|");
 Console.WriteLine();
