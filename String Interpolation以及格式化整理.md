@@ -73,9 +73,10 @@ City 的體重是 62.100
 ## 常見的數值格式
 ### 貨幣
 ```C#
-Console.WriteLine($"{2-0:C1}"); // C1 代表為 2 後面補1個零
-Console.WriteLine($"{2-0:C3}"); // C3 代表為 2 後面補3個零
-Console.WriteLine($"{2-0:C6}"); // C6 代表為 2 後面補6個零
+// $"{ 2:C1}" 要加空白 , 不然似乎會解析錯誤
+Console.WriteLine($"{ 2:C1}"); // C1 代表為 2 後面補1個零
+Console.WriteLine($"{ 2:C3}"); // C3 代表為 2 後面補3個零
+Console.WriteLine($"{ 2:C6}"); // C6 代表為 2 後面補6個零
 
 NT$2.0
 NT$2.000
@@ -84,10 +85,10 @@ NT$2.000000
 ### 十進制 Decimal
 - 帶選擇性負號的整數位數
 ```C#
-Console.WriteLine($"{2-0:D1}"); // 有1個數字 , 若不夠 , 前面補零
-Console.WriteLine($"{2-0:D3}"); // 有3個數字 , 若不夠 , 前面補零
-Console.WriteLine($"{2-0:D6}"); // 有6個數字 , 若不夠 , 前面補零
-Console.WriteLine($"{-2-0:D6}"); // 有6個數字 , 若不夠 , 前面補零
+Console.WriteLine($"{ 2:D1}"); // 有1個數字 , 若不夠 , 前面補零
+Console.WriteLine($"{ 2:D3}"); // 有3個數字 , 若不夠 , 前面補零
+Console.WriteLine($"{ 2:D6}"); // 有6個數字 , 若不夠 , 前面補零
+Console.WriteLine($"{-2:D6}"); // 有6個數字 , 若不夠 , 前面補零
 
 2
 002
@@ -96,9 +97,9 @@ Console.WriteLine($"{-2-0:D6}"); // 有6個數字 , 若不夠 , 前面補零
 ```
 ### 指數標記
 ```C#
-Console.WriteLine($"{12345.6789-0:E}"); //預設小點後六點 , 四捨五入
-Console.WriteLine($"{12345.6789-0:E4}"); // 小數點後四位 , 四捨五入
-Console.WriteLine($"{12345.6789-0:E10}"); // 小數點後十位 , 可能補零
+Console.WriteLine($"{12345.6789:E}");   //預設小點後六點 , 四捨五入
+Console.WriteLine($"{12345.6789:E4}");  // 小數點後四位 , 四捨五入
+Console.WriteLine($"{12345.6789:E10}"); // 小數點後十位 , 可能補零
 
 1.234568E+004
 1.2346E+004
@@ -106,10 +107,10 @@ Console.WriteLine($"{12345.6789-0:E10}"); // 小數點後十位 , 可能補零
 ```
 ### 用分號隔開的數字
 ```C#
-Console.WriteLine($"{250000.1-0:N0}"); // 沒有小數
-Console.WriteLine($"{250000.1-0:N}"); // 預設小數點後兩位
-Console.WriteLine($"{250000.1-0:N3}"); // 小數點後三位
-Console.WriteLine($"{250000.1-0:N6}"); // 小數點後六位
+Console.WriteLine($"{250000.1:N0}"); // 沒有小數
+Console.WriteLine($"{250000.1:N}");  // 預設小數點後兩位
+Console.WriteLine($"{250000.1:N3}"); // 小數點後三位
+Console.WriteLine($"{250000.1:N6}"); // 小數點後六位
 
 250,000
 250,000.10
@@ -118,12 +119,12 @@ Console.WriteLine($"{250000.1-0:N6}"); // 小數點後六位
 ```
 ### 十六進制
 ```C#
-Console.WriteLine($"{0x1E - 0:X}"); // 預設1個佔位數字
-Console.WriteLine($"{0x1E - 0:X1}"); // 1個佔位數字
-Console.WriteLine($"{0x1E - 0:X3}"); // 3個佔位數字 , 可補零
-Console.WriteLine($"{30 - 0:X1}"); // 1個佔位數字
-Console.WriteLine($"{30 - 0:X3}"); // 3個佔位數字 , 可補零
-Console.WriteLine($"{30 - 0:X6}"); // 6個佔位數字 , 可補零
+Console.WriteLine($"{0x1E:X}");  // 預設1個佔位數字
+Console.WriteLine($"{0x1E:X1}"); // 1個佔位數字
+Console.WriteLine($"{0x1E:X3}"); // 3個佔位數字 , 可補零
+Console.WriteLine($"{ 30:X1}"); // 1個佔位數字
+Console.WriteLine($"{ 30:X3}"); // 3個佔位數字 , 可補零
+Console.WriteLine($"{ 30:X6}"); // 6個佔位數字 , 可補零
 
 1E
 1E
@@ -134,17 +135,17 @@ Console.WriteLine($"{30 - 0:X6}"); // 6個佔位數字 , 可補零
 ```
 ### 格式化百分比
 ```C#
-Console.WriteLine($"{-0.24583-0:P}"); // 預設小數點後兩位 , 四捨五入
-Console.WriteLine($"{-0.24583-0:P1}"); // 小數點後一位 , 四捨五入
-Console.WriteLine($"{-0.24583-0:P3}"); // 小數點後3位 , 四捨五入
+Console.WriteLine($"{-0.24583:P}");  // 預設小數點後兩位 , 四捨五入
+Console.WriteLine($"{-0.2458:P1}"); // 小數點後一位 , 四捨五入
+Console.WriteLine($"{-0.24583:P3}"); // 小數點後3位 , 四捨五入
 
-Console.WriteLine($"{0.24583-0:P}"); 
-Console.WriteLine($"{0.24583-0:P1}");
-Console.WriteLine($"{0.24583-0:P3}");
+Console.WriteLine($"{0.2458:P}");
+Console.WriteLine($"{0.24583:P1}");
+Console.WriteLine($"{0.24583:P3}");
 
-Console.WriteLine($"{10.3 - 0:P}");
-Console.WriteLine($"{10.3 - 0:P1}");
-Console.WriteLine($"{10.3 - 0:P3}");
+Console.WriteLine($"{10.3:P}");
+Console.WriteLine($"{10.3:P1}");
+Console.WriteLine($"{10.3:P3}");
 
 -24.58%
 -24.6%
